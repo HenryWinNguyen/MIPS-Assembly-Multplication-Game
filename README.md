@@ -50,4 +50,49 @@ mark_move.asm: Places or removes a mark on the board
 validate_move.asm: Confirms whether a product is on the board and unmarked
 
 
+---
+
+## 2. Instructions & Skills Demonstrated
+
+### How to Run the Game
+
+1. Download and open the **MARS simulator**:
+   http://courses.missouristate.edu/kenvollmar/mars/
+
+2. Open `main.asm` in the simulator
+
+3. Click **"Assemble"**, then click **"Go"** to begin
+
+4. Follow the on-screen prompts:
+   - Choose slider (upper or lower)
+   - Choose number (1 to 9)
+   - Game continues until someone wins or the board is full
+
+### Skills Demonstrated
+
+**Assembly Programming**
+- Use of registers, memory addressing, and branching
+- Stack management and proper use of procedure calls (`jal`, `jr`, `sw`, `lw`)
+- Efficient arithmetic operations for multiplication logic
+- Use of `syscall` for I/O (input, print string, print int, random numbers)
+
+**Modular Software Design**
+- Code split into purpose-specific `.asm` files
+- Separation of UI display, game logic, AI decision-making, and rule enforcement
+
+**Game & AI Logic**
+- AI checks for immediate win; otherwise, selects a valid move randomly
+- Win detection includes horizontal, vertical, and diagonal scans
+- Tie detection if all board spaces are filled
+
+**User Interface**
+- Real-time visual sliders and a structured ASCII-rendered board
+- Clear prompts, error handling, and status updates
+- Marking system uses `X` for the player and `O` for the computer
+
+---
+
+
+
+
 
